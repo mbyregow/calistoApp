@@ -1,5 +1,5 @@
 ﻿{
-    "connectionString": "mongodb://node:nodeUser@ds013172.mlab.com:13172/calisto-user-db",
+    "connectionString": "mongodb://heroku_vzqg25f5:p88mknlos91tf7bee82pd901at@ds013162.mlab.com:13162/heroku_vzqg25f5",
     "apiUrl": "http://localhost:3000/api",
     "secret": "CALISTO SECRET FOR ACCESS TOKEN"
 }
