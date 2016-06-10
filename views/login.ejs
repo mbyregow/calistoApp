@@ -2,15 +2,44 @@
 <div style="overflow:hidden;">
 <header class="header" id="header"><!--header-start-->
 	<div class="container">
-    	<figure class="logo animated fadeInDown delay-07s">
-        	<a href="#"><img src="img/logo.png" alt=""></a>	
-        </figure>	
-        <h1 class="animated fadeInDown delay-07s">Welcome To Calisto Photography</h1>
-        <ul class="we-create animated fadeInUp delay-1s">
-        	<li>Preserving the moments that matter</li>
-        </ul>
-            <!--a class="link animated fadeInUp delay-1s" href="#" >Sign Up</a-->
-			<button type="button" class="btn btn-info btn-lg link animated fadeInUp delay-1s" data-toggle="modal" data-target="#myModal">Sign Up</button>
+		<div  class="row">
+			<div class="col-lg-7 col-sm-6 wow fadeInUp delay-05s">
+				<figure class="logo animated fadeInDown delay-07s">
+					<a href="#"><img src="img/logo.png" alt=""></a>	
+				</figure>	
+				<h1 class="animated fadeInDown delay-07s">Welcome To Calisto Photography</h1>
+				<ul class="we-create animated fadeInUp delay-1s">
+					<li>Preserving the moments that matter</li>
+				</ul>
+					<!--a class="link animated fadeInUp delay-1s" href="#" >Sign Up</a>
+					<button type="button" class="btn btn-info btn-lg link animated fadeInUp delay-1s" data-toggle="modal" data-target="#myModal">Sign Up</button -->
+			</div>
+			<div class="col-lg-5 col-sm-6 text-left wow fadeInLeft delay-02s">
+				<div class="form loginForm">
+					<h2>Login</h2>
+					<% if(locals.error) { %>
+						<div class="alert alert-danger"><%= error %></div>
+					<% } %>
+					<% if(locals.success) { %>
+						<div class="alert alert-success"><%= success %></div>
+					<% } %>
+					<form method="post">
+						<div class="form-group">
+							<label for="username">Username</label>
+							<input type="text" name="username" id="username" value="<%= locals.username || '' %>" class="form-control input-text" />
+						</div>
+						<div class="form-group">
+							<label for="password">Password</label>
+							<input type="password" name="password" id="password" class="form-control input-text" />
+						</div>
+						<div class="form-group">
+							<button type="submit" class="input-btn">Login</button>
+							<a class="btn btn-link regist-link" data-dismiss="modal" data-toggle="modal" data-target="#registerModal">Register</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
     </div>
 </div>
 </header><!--header-end-->

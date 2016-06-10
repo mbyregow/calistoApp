@@ -64,7 +64,7 @@ body {
 }
 h2{
 	font-size:34px;
-	color:#222222;
+	/*color:#222222;*/
 	font-family: 'Montserrat', sans-serif;
 	font-weight:700;
 	letter-spacing: -1px;
@@ -736,7 +736,14 @@ border: 2px solid #fff;
 	background: #111;
 	color: #fff;
 }
-
+.loginForm .input-btn:hover{
+	background: #fff;
+	color: #111;
+}
+.regist-link{
+	font-size: 16px;
+    font-weight: bold;
+}
 /* Footer
 ---------------------------------*/
 
